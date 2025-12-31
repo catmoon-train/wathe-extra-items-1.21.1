@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import sir.nicholascooke.watheextraitems.item.ModItems;
 
 public class WatheExtraItems implements ModInitializer {
 	public static final String MOD_ID = "watheextraitems";
@@ -11,6 +12,6 @@ public class WatheExtraItems implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.regModItems();
 	}
 }
