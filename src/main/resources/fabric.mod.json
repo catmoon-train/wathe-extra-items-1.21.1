@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "watheextraitems",
+	"version": "${version}",
+	"name": "Wathe Extra Items",
+	"description": "This mod is for use in Harpy Express Modpacks that adds new items! This mod was mainly developed for the RUMBLE PARTY community for my server we use!",
+	"authors": [
+		"SirNicholasCooke"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/watheextraitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sir.nicholascooke.watheextraitems.WatheExtraItems"
+		],
+		"fabric-datagen": [
+			"sir.nicholascooke.watheextraitems.WatheExtraItemsDataGenerator"
+		],
+		"client": [
+			"sir.nicholascooke.watheextraitems.WatheExtraItemsClient"
+		]
+	},
+	"mixins": [
+		"watheextraitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
