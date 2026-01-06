@@ -37,7 +37,7 @@ public class ModItems {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-           entries.add(CIGAR);
+            entries.add(CIGAR);
         });
     }
 }

@@ -32,7 +32,7 @@ public class RadioBlock extends Block {
 
     @Override
     public @Nullable BlockState getPlacementState(ItemPlacementContext ctx) {
-        // Face the player when placed (front of radio points toward you)
+
         return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
