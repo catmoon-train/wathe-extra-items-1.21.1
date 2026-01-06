@@ -1,5 +1,6 @@
 package sir.nicholascooke.watheextraitems;
 
+import sir.nicholascooke.watheextraitems.block.RadioBlock;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.minecraft.client.render.RenderLayer;
@@ -11,7 +12,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.block.BlockState;
 import sir.nicholascooke.watheextraitems.block.ModBlocks;
-import sir.nicholascooke.watheextraitems.block.RadioBlock;
 
 import java.util.Objects;
 
