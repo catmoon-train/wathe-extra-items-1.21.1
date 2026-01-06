@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "watheextraitems:block/radio", "y": 0 },
+    "facing=south": { "model": "watheextraitems:block/radio", "y": 180 },
+    "facing=west":  { "model": "watheextraitems:block/radio", "y": 270 },
+    "facing=east":  { "model": "watheextraitems:block/radio", "y": 90 }
+  }
+}

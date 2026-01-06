@@ -20,13 +20,12 @@ public class ConsumableCigarItem extends Item {
         super(settings);
     }
 
-    @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack itemStack = user.getStackInHand(hand);
-
         if (user.getItemCooldownManager().isCoolingDown(this)) {
-            return TypedActionResult.fail(itemStack);
+            return TypedActionResult.fail(user.getStackInHand(hand));
         }
+
+        ItemStack itemStack = user.getStackInHand(hand);
 
         if (!world.isClient && world instanceof ServerWorld serverWorld) {
 
@@ -40,6 +39,7 @@ public class ConsumableCigarItem extends Item {
             );
 
             Vec3d look = user.getRotationVec(1.0F);
+
             double smokeX = user.getX() + look.x * 0.4;
             double smokeY = user.getY() + user.getStandingEyeHeight() - 0.15;
             double smokeZ = user.getZ() + look.z * 0.4;
@@ -49,14 +49,15 @@ public class ConsumableCigarItem extends Item {
                     smokeX,
                     smokeY,
                     smokeZ,
-                    4,
-                    0.08,
-                    0.08,
-                    0.08,
+                    5,
+                    0.002,
+                    0.1,
+                    0.002,
                     0.002
             );
 
             int newDamage = itemStack.getDamage() + 1;
+
             if (newDamage >= itemStack.getMaxDamage()) {
                 user.setStackInHand(hand, ItemStack.EMPTY);
             } else {
