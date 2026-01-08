@@ -24,6 +24,16 @@ public class ModItems {
             new BlockItem(ModBlocks.RADIO, new Item.Settings())
     );
 
+    public static final Item TMOTL = regItem("tmotl", new Item(new Item.Settings()
+            .maxCount(1)
+
+    ));
+
+    public static final Item TRHM = regItem("trhm", new Item(new Item.Settings()
+            .maxCount(1)
+
+    ));
+
 
     private static Item regItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WatheExtraItems.MOD_ID, name), item);
@@ -32,12 +42,5 @@ public class ModItems {
     public static void regModItems() {
         WatheExtraItems.LOGGER.info("Reg Mod Items for " + WatheExtraItems.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-            entries.add(ModItems.RADIO);
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(CIGAR);
-        });
     }
 }

@@ -69,6 +69,5 @@ public class RadioBlock extends Block {
         player.sendMessage(Text.literal(turningOn ? "Radio: ON" : "Radio: OFF"), true);
 
         return ActionResult.SUCCESS;
-        //amend
     }
 }

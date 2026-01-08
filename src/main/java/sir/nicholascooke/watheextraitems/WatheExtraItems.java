@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sir.nicholascooke.watheextraitems.block.ModBlocks;
+import sir.nicholascooke.watheextraitems.item.ModItemGroups;
 import sir.nicholascooke.watheextraitems.item.ModItems;
 
 public class WatheExtraItems implements ModInitializer {
@@ -15,5 +16,6 @@ public class WatheExtraItems implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.register();
 		ModItems.regModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }
