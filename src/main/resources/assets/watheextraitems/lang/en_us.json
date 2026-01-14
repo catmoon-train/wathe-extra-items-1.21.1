@@ -2,6 +2,9 @@
   "item.watheextraitems.tmotl": "The Murder on the Links",
   "item.watheextraitems.trhm": "The Red House Mystery",
   "item.watheextraitems.cigar": "Cigar",
+  "item.watheextraitems.highball": "Highball",
   "block.watheextraitems.radio": "Radio",
-  "itemGroup.watheextraitems": "Wathe: Extra Items"
+  "itemGroup.watheextraitems": "Wathe Extra: Items",
+  "itemGroup.watheextrabooks": "Wathe Extra: Books",
+  "itemGroup.watheextraconsumables": "Wathe Extra: Consumables"
 }

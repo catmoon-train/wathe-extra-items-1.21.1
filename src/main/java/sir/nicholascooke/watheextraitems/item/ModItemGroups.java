@@ -28,14 +28,28 @@ public class ModItemGroups {
             Registries.ITEM_GROUP,
             Identifier.of(WatheExtraItems.MOD_ID, "extra_books"),
             FabricItemGroup.builder()
-                    .displayName(Text.literal("Wathe: Extra Books"))
-                    .icon(() -> new ItemStack(ModItems.TMOTL)) // book icon
+                    .displayName(Text.translatable("itemGroup.watheextrabooks"))
+                    .icon(() -> new ItemStack(ModItems.TMOTL))
                     .entries((context, entries) -> {
                         entries.add(ModItems.TMOTL);
                         entries.add(ModItems.TRHM);
                     })
                     .build()
     );
+
+    public static final ItemGroup EXTRA_CONSUMABLES = Registry.register(
+            Registries.ITEM_GROUP,
+            Identifier.of(WatheExtraItems.MOD_ID, "extra_consumables"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemGroup.watheextraconsumables"))
+                    .icon(() -> new ItemStack(ModItems.HIGHBALL))
+                    .entries((context, entries) -> {
+                        entries.add(ModItems.HIGHBALL);
+                    })
+                    .build()
+
+    );
+
 
 
 
