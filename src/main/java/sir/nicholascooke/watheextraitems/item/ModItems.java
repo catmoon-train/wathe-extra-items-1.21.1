@@ -28,14 +28,16 @@ public class ModItems {
             new BlockItem(ModBlocks.RADIO, new Item.Settings())
     );
 
-    public static final Item TMOTL = regItem("tmotl", new Item(new Item.Settings()
-            .maxCount(1)
-
+    public static final Item TMOTL = regItem("tmotl", new BookItem(
+            new Item.Settings().maxCount(1),
+            "How is this here?",
+            "Written By Agatha Christie in APRIL 1923"
     ));
 
-    public static final Item TRHM = regItem("trhm", new Item(new Item.Settings()
-            .maxCount(1)
-
+    public static final Item TRHM = regItem("trhm", new BookItem(
+            new Item.Settings().maxCount(1),
+            "Is this an Omen?",
+            "Written By Alan Alexander Milne"
     ));
 
 

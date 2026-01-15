@@ -13,12 +13,11 @@ public class ModItemGroups {
 
     public static final ItemGroup WATHE_EXTRA_ITEMS = Registry.register(
             Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "watheextraitems"),
+            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_misc"),
             FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemGroup.watheextraitems"))
-                    .icon(() -> new ItemStack(ModItems.CIGAR)) // tab icon
+                    .displayName(Text.translatable("itemGroup.watheextraitemsmisc"))
+                    .icon(() -> new ItemStack(ModItems.RADIO)) // tab icon
                     .entries((context, entries) -> {
-                        entries.add(ModItems.CIGAR);
                         entries.add(ModItems.RADIO);
                     })
                     .build()
@@ -26,7 +25,7 @@ public class ModItemGroups {
 
     public static final ItemGroup EXTRA_BOOKS = Registry.register(
             Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "extra_books"),
+            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_books"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.watheextrabooks"))
                     .icon(() -> new ItemStack(ModItems.TMOTL))
@@ -39,17 +38,16 @@ public class ModItemGroups {
 
     public static final ItemGroup EXTRA_CONSUMABLES = Registry.register(
             Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "extra_consumables"),
+            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_consumables"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.watheextraconsumables"))
                     .icon(() -> new ItemStack(ModItems.HIGHBALL))
                     .entries((context, entries) -> {
                         entries.add(ModItems.HIGHBALL);
+                        entries.add(ModItems.CIGAR);
                     })
                     .build()
-
     );
-
 
 
 

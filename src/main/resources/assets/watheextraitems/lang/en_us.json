@@ -1,10 +1,16 @@
 {
   "item.watheextraitems.tmotl": "The Murder on the Links",
   "item.watheextraitems.trhm": "The Red House Mystery",
+
   "item.watheextraitems.cigar": "Cigar",
+  "item.watheextraitems.cigar.lore": "A slow burn, meant to be savoured.",
+  "item.watheextraitems.cigar.lore.2": "Chachi Greyland.",
+
   "item.watheextraitems.highball": "Highball",
+
   "block.watheextraitems.radio": "Radio",
-  "itemGroup.watheextraitems": "Wathe Extra: Items",
-  "itemGroup.watheextrabooks": "Wathe Extra: Books",
-  "itemGroup.watheextraconsumables": "Wathe Extra: Consumables"
+
+  "itemGroup.watheextraitemsmisc": "Wathe Extra Items: Misc",
+  "itemGroup.watheextrabooks": "Wathe Extra Items: Books",
+  "itemGroup.watheextraconsumables": "Wathe Extra Items: Consumables"
 }

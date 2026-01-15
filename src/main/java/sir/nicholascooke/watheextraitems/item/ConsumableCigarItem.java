@@ -1,16 +1,22 @@
 package sir.nicholascooke.watheextraitems.item;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class ConsumableCigarItem extends Item {
 
@@ -20,6 +26,7 @@ public class ConsumableCigarItem extends Item {
         super(settings);
     }
 
+    @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (user.getItemCooldownManager().isCoolingDown(this)) {
             return TypedActionResult.fail(user.getStackInHand(hand));
@@ -68,4 +75,23 @@ public class ConsumableCigarItem extends Item {
 
         return TypedActionResult.success(itemStack, world.isClient());
     }
-}
+
+    @Override
+    public void appendTooltip(
+            ItemStack stack,
+            TooltipContext context,
+            List<Text> tooltip,
+            TooltipType type
+    ) {
+        tooltip.add(
+                Text.translatable("item.watheextraitems.cigar.lore")
+                        .formatted(Formatting.GOLD, Formatting.ITALIC)
+        );
+
+        tooltip.add(
+                Text.translatable("item.watheextraitems.cigar.lore.2")
+                        .formatted(Formatting.DARK_GRAY, Formatting.BOLD)
+            );
+        }
+    }
+
