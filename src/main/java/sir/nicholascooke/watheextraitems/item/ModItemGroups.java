@@ -30,8 +30,13 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup.watheextrabooks"))
                     .icon(() -> new ItemStack(ModItems.TMOTL))
                     .entries((context, entries) -> {
+                        entries.add(ModItems.ASIS);
+                        entries.add(ModItems.TM);
                         entries.add(ModItems.TMOTL);
+                        entries.add(ModItems.TMOTYR);
+                        entries.add(ModItems.TMRM);
                         entries.add(ModItems.TRHM);
+
                     })
                     .build()
     );

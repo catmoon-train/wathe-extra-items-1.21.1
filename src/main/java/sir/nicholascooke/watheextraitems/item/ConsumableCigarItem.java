@@ -85,12 +85,12 @@ public class ConsumableCigarItem extends Item {
     ) {
         tooltip.add(
                 Text.translatable("item.watheextraitems.cigar.lore")
-                        .formatted(Formatting.GOLD, Formatting.ITALIC)
+                        .formatted(Formatting.GRAY, Formatting.ITALIC)
         );
 
         tooltip.add(
                 Text.translatable("item.watheextraitems.cigar.lore.2")
-                        .formatted(Formatting.DARK_GRAY, Formatting.BOLD)
+                        .formatted(Formatting.DARK_GRAY)
             );
         }
     }

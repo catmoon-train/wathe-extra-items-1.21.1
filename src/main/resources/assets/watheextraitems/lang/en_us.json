@@ -1,6 +1,11 @@
 {
-  "item.watheextraitems.tmotl": "The Murder on the Links",
+  "item.watheextraitems.tmotl": "The Murder On The Links",
   "item.watheextraitems.trhm": "The Red House Mystery",
+  "item.watheextraitems.asis": "A Study In Scarlet",
+  "item.watheextraitems.tmrm": "The Murders In The Rue Morgue",
+  "item.watheextraitems.tm": "The Moonstone",
+  "item.watheextraitems.tmotyr": "The Mystery Of The Yellow Room",
+
 
   "item.watheextraitems.cigar": "Cigar",
   "item.watheextraitems.cigar.lore": "A slow burn, meant to be savoured.",

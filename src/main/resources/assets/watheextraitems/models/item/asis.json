@@ -1,0 +1,9 @@
+{
+  "parent": "watheextraitems:item/book_item",
+  "textures": {
+    "0": "watheextraitems:item/bookitems/pages",
+    "1": "watheextraitems:item/bookitems/asis",
+    "2": "watheextraitems:item/bookitems/asisplacer",
+    "particle": "watheextraitems:item/pages"
+  }
+}

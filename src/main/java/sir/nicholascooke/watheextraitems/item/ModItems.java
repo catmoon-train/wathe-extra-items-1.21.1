@@ -19,8 +19,11 @@ public class ModItems {
                             .maxDamage(6)
             )
     );
+
     public static final Item HIGHBALL = regItem("highball",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
+
+
 
     public static final Item RADIO = Registry.register(
             Registries.ITEM,
@@ -33,13 +36,31 @@ public class ModItems {
             "How is this here?",
             "Written By Agatha Christie in APRIL 1923"
     ));
-
     public static final Item TRHM = regItem("trhm", new BookItem(
             new Item.Settings().maxCount(1),
             "Is this an Omen?",
             "Written By Alan Alexander Milne"
     ));
-
+    public static final Item ASIS = regItem("asis", new BookItem(
+            new Item.Settings().maxCount(1),
+            "A Detective En Route",
+            "Written by Sir Arthur Conan Doyle"
+    ));
+    public static final Item TMRM = regItem("tmrm", new BookItem(
+            new Item.Settings().maxCount(1),
+            "Brutal but Brief",
+            "Written By Edgar Allan Poe"
+    ));
+    public static final Item TM = regItem("tm", new BookItem(
+            new Item.Settings().maxCount(1),
+            "A Tale of Redemption",
+            "Written By Wilkie Collins"
+    ));
+    public static final Item TMOTYR = regItem("tmotyr", new BookItem(
+            new Item.Settings().maxCount(1),
+            "A Perfect Crime in Plain Sight.",
+            "Written By Gaston Leroux"
+    ));
 
     private static Item regItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WatheExtraItems.MOD_ID, name), item);

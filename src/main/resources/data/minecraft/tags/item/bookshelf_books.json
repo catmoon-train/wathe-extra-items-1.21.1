@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "watheextraitems:tmotl",
-    "watheextraitems:trhm"
+    "watheextraitems:trhm",
+    "watheextraitems:asis",
+    "watheextraitems:tm",
+    "watheextraitems:tmrm",
+    "watheextraitems:tmotyr"
   ]
 }
