@@ -1,6 +1,7 @@
 package sir.nicholascooke.watheextraitems.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -11,52 +12,59 @@ import sir.nicholascooke.watheextraitems.WatheExtraItems;
 
 public class ModItemGroups {
 
-    public static final ItemGroup WATHE_EXTRA_ITEMS = Registry.register(
-            Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_misc"),
-            FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemGroup.watheextraitemsmisc"))
-                    .icon(() -> new ItemStack(ModItems.RADIO)) // tab icon
-                    .entries((context, entries) -> {
-                        entries.add(ModItems.RADIO);
-                    })
-                    .build()
+
+    public static final ItemGroup EXTRA_MISC = regItemGroup(
+            "extraitems_misc",
+            Text.translatable("itemGroup.watheextramisc"),
+            ModItems.RADIO,
+            ModItems.RADIO
+
     );
 
-    public static final ItemGroup EXTRA_BOOKS = Registry.register(
-            Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_books"),
-            FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemGroup.watheextrabooks"))
-                    .icon(() -> new ItemStack(ModItems.TMOTL))
-                    .entries((context, entries) -> {
-                        entries.add(ModItems.ASIS);
-                        entries.add(ModItems.TM);
-                        entries.add(ModItems.TMOTL);
-                        entries.add(ModItems.TMOTYR);
-                        entries.add(ModItems.TMRM);
-                        entries.add(ModItems.TRHM);
-
-                    })
-                    .build()
+    public static final ItemGroup EXTRA_BOOKS = regItemGroup(
+            "extraitems_books",
+            Text.translatable("itemGroup.watheextrabooks"),
+            ModItems.ASIS,
+            ModItems.ASIS,
+            ModItems.TM,
+            ModItems.TMOTL,
+            ModItems.TMOTYR,
+            ModItems.TMRM,
+            ModItems.TRHM
     );
 
-    public static final ItemGroup EXTRA_CONSUMABLES = Registry.register(
-            Registries.ITEM_GROUP,
-            Identifier.of(WatheExtraItems.MOD_ID, "extraitems_consumables"),
-            FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemGroup.watheextraconsumables"))
-                    .icon(() -> new ItemStack(ModItems.HIGHBALL))
-                    .entries((context, entries) -> {
-                        entries.add(ModItems.HIGHBALL);
-                        entries.add(ModItems.CIGAR);
-                    })
-                    .build()
+    public static final ItemGroup EXTRA_CONSUMABLES = regItemGroup(
+            "extraitems_consumables",
+            Text.translatable("itemGroup.watheextraconsumables"),
+            ModItems.HIGHBALL,
+            ModItems.HIGHBALL,
+            ModItems.CIGAR
     );
 
 
+    private static ItemGroup regItemGroup(
+            String name,
+            Text displayName,
+            Item icon,
+            Item... items
+    ) {
+        return Registry.register(
+                Registries.ITEM_GROUP,
+                Identifier.of(WatheExtraItems.MOD_ID, name),
+                FabricItemGroup.builder()
+                        .displayName(displayName)
+                        .icon(() -> new ItemStack(icon))
+                        .entries((context, entries) -> {
+                            for (Item item : items) {
+                                entries.add(item);
+                            }
+                        })
+                        .build()
+        );
+    }
 
-    public static void registerItemGroups() {
+
+    public static void regItemGroups() {
         WatheExtraItems.LOGGER.info("Registering item groups for " + WatheExtraItems.MOD_ID);
     }
 }

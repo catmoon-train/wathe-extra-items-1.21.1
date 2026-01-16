@@ -14,8 +14,8 @@ public class WatheExtraItems implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModBlocks.register();
+		ModBlocks.regModBlocks();
 		ModItems.regModItems();
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.regItemGroups();
 	}
 }

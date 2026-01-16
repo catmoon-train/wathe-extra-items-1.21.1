@@ -21,7 +21,7 @@ public class ModBlocks {
             )
     );
 
-    public static void register() {
+    public static void regModBlocks() {
         WatheExtraItems.LOGGER.info("Registered blocks");
     }
 }
