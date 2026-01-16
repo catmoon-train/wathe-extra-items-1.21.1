@@ -7,11 +7,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import java.util.List;
 
-public class BookItem extends Item {
+public class ToolTip extends Item {
     private final String shortTooltip;
     private final String detailedTooltip;
 
-    public BookItem(Settings settings, String shortTooltip, String detailedTooltip) {
+    public ToolTip(Settings settings, String shortTooltip, String detailedTooltip) {
         super(settings);
         this.shortTooltip = shortTooltip;
         this.detailedTooltip = detailedTooltip;

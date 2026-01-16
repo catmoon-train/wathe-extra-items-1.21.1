@@ -1,0 +1,6 @@
+{
+  "parent": "watheextraitems:item/small_item",
+  "textures": {
+    "layer0": "watheextraitems:item/coal_coke"
+  }
+}

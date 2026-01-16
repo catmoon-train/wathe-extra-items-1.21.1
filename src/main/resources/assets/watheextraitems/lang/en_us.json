@@ -7,13 +7,17 @@
   "item.watheextraitems.tmotyr": "The Mystery Of The Yellow Room",
 
 
+
   "item.watheextraitems.cigar": "Cigar",
   "item.watheextraitems.cigar.lore": "A slow burn, meant to be savoured.",
   "item.watheextraitems.cigar.lore.2": "Chachi Greyland.",
-
   "item.watheextraitems.highball": "Highball",
+  "item.watheextraitems.coal_coke": "Coal Coke",
 
   "block.watheextraitems.radio": "Radio",
+
+  "item.watheextraitems.pocket_watch": "Pocket Watch",
+  "item.watheextraitems.pocket_watch.local_time": "§6Local Time: §f%1$s",
 
   "itemGroup.watheextramisc": "Wathe Extra Items: Misc",
   "itemGroup.watheextrabooks": "Wathe Extra Items: Books",

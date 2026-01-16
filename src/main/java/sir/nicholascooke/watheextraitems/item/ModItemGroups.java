@@ -17,7 +17,8 @@ public class ModItemGroups {
             "extraitems_misc",
             Text.translatable("itemGroup.watheextramisc"),
             ModItems.RADIO,
-            ModItems.RADIO
+            ModItems.RADIO,
+            ModItems.POCKET_WATCH
 
     );
 
@@ -38,7 +39,8 @@ public class ModItemGroups {
             Text.translatable("itemGroup.watheextraconsumables"),
             ModItems.HIGHBALL,
             ModItems.HIGHBALL,
-            ModItems.CIGAR
+            ModItems.CIGAR,
+            ModItems.COAL_COKE
     );
 
 

@@ -1,6 +1,8 @@
 package sir.nicholascooke.watheextraitems.item;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.component.type.FoodComponents;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,17 +14,25 @@ import dev.doctor4t.wathe.item.CocktailItem;
 
 
 public class ModItems {
-    public static final Item CIGAR = regItem(
-            "cigar",
-            new ConsumableCigarItem(
-                    new Item.Settings()
-                            .maxDamage(6)
-            )
-    );
+    public static final Item CIGAR = regItem("cigar", new ConsumableCigarItem(new Item.Settings().maxDamage(6)));
 
     public static final Item HIGHBALL = regItem("highball",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
+    public static final Item COAL_COKE = regItem("coal_coke", new ToolTip(
+            new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 400, 10, false, false), 1.0f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 10, false, false),1.0f)
+                    .alwaysEdible()
+                    .build()),
+            "It's Literally Just Coal Coke.",
+            "Slime? Why are you eating this?"
+    ));
+
+    public static final Item POCKET_WATCH = regItem(
+            "pocket_watch",
+            new PocketWatchItem(new Item.Settings().maxCount(1))
+    );
 
 
     public static final Item RADIO = Registry.register(
@@ -31,32 +41,32 @@ public class ModItems {
             new BlockItem(ModBlocks.RADIO, new Item.Settings())
     );
 
-    public static final Item TMOTL = regItem("tmotl", new BookItem(
+    public static final Item TMOTL = regItem("tmotl", new ToolTip(
             new Item.Settings().maxCount(1),
             "How is this here?",
             "Written By Agatha Christie in APRIL 1923"
     ));
-    public static final Item TRHM = regItem("trhm", new BookItem(
+    public static final Item TRHM = regItem("trhm", new ToolTip(
             new Item.Settings().maxCount(1),
-            "Is this an Omen?",
+            "Is This An Omen?",
             "Written By Alan Alexander Milne"
     ));
-    public static final Item ASIS = regItem("asis", new BookItem(
+    public static final Item ASIS = regItem("asis", new ToolTip(
             new Item.Settings().maxCount(1),
             "A Detective En Route",
             "Written by Sir Arthur Conan Doyle"
     ));
-    public static final Item TMRM = regItem("tmrm", new BookItem(
+    public static final Item TMRM = regItem("tmrm", new ToolTip(
             new Item.Settings().maxCount(1),
             "Brutal but Brief",
             "Written By Edgar Allan Poe"
     ));
-    public static final Item TM = regItem("tm", new BookItem(
+    public static final Item TM = regItem("tm", new ToolTip(
             new Item.Settings().maxCount(1),
             "A Tale of Redemption",
             "Written By Wilkie Collins"
     ));
-    public static final Item TMOTYR = regItem("tmotyr", new BookItem(
+    public static final Item TMOTYR = regItem("tmotyr", new ToolTip(
             new Item.Settings().maxCount(1),
             "A Perfect Crime in Plain Sight.",
             "Written By Gaston Leroux"
