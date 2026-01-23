@@ -23,7 +23,16 @@ public class RadioBlock extends Block {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty ON = BooleanProperty.of("on");
 
-    private static final VoxelShape BASE = Block.createCuboidShape(3, 0, 5, 13, 6, 11);
+    // Matches the radio base model footprint
+    private static final VoxelShape BASE =
+            Block.createCuboidShape(
+                    1.0,  // minX
+                    0.0,  // minY
+                    3.0,  // minZ
+                    15.0, // maxX
+                    8.0,  // maxY
+                    13.0  // maxZ
+            );
 
     public RadioBlock(Settings settings) {
         super(settings);
@@ -71,3 +80,4 @@ public class RadioBlock extends Block {
         return ActionResult.SUCCESS;
     }
 }
+
