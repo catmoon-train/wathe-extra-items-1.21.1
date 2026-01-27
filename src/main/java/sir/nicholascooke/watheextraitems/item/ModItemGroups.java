@@ -40,6 +40,7 @@ public class ModItemGroups {
             ModItems.HIGHBALL,
             ModItems.HIGHBALL,
             ModItems.CIGAR,
+            ModItems.CIGARETTE,
             ModItems.COAL_COKE
     );
 

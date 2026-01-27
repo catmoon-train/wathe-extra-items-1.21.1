@@ -22,8 +22,13 @@ public class ConsumableCigarItem extends Item {
 
     private static final int COOLDOWN_TICKS = 75;
 
-    public ConsumableCigarItem(Settings settings) {
+    private final String shortTooltip;
+    private final String detailedTooltip;
+
+    public ConsumableCigarItem(Settings settings, String shortTooltip, String detailedTooltip) {
         super(settings);
+        this.shortTooltip = shortTooltip;
+        this.detailedTooltip = detailedTooltip;
     }
 
     @Override
@@ -77,21 +82,21 @@ public class ConsumableCigarItem extends Item {
     }
 
     @Override
-    public void appendTooltip(
-            ItemStack stack,
-            TooltipContext context,
-            List<Text> tooltip,
-            TooltipType type
-    ) {
-        tooltip.add(
-                Text.translatable("item.watheextraitems.cigar.lore")
-                        .formatted(Formatting.GRAY, Formatting.ITALIC)
-        );
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.literal(shortTooltip)
+                .formatted(Formatting.GRAY, Formatting.ITALIC));
 
-        tooltip.add(
-                Text.translatable("item.watheextraitems.cigar.lore.2")
-                        .formatted(Formatting.DARK_GRAY)
-            );
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.literal(detailedTooltip)
+                    .formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
+        } else {
+            tooltip.add(Text.literal("Hold ")
+                    .append(Text.literal("Shift").formatted(Formatting.YELLOW))
+                    .append(Text.literal(" for more info."))
+                    .formatted(Formatting.DARK_GRAY));
         }
     }
+}
+
+
 

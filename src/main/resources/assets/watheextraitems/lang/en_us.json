@@ -9,8 +9,9 @@
 
 
   "item.watheextraitems.cigar": "Cigar",
-  "item.watheextraitems.cigar.lore": "A slow burn, meant to be savoured.",
-  "item.watheextraitems.cigar.lore.2": "Chachi Greyland.",
+  "item.watheextraitems.cigarette": "Cigarette",
+  "item.watheextraitems.cigarette.lore": "Cheap but effective nicotine.",
+  "item.watheextraitems.cigarette.lore.2": "This stuff tastes bad.",
   "item.watheextraitems.highball": "Highball",
   "item.watheextraitems.coal_coke": "Coal Coke",
 

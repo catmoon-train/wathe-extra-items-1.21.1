@@ -14,7 +14,24 @@ import dev.doctor4t.wathe.item.CocktailItem;
 
 
 public class ModItems {
-    public static final Item CIGAR = regItem("cigar", new ConsumableCigarItem(new Item.Settings().maxDamage(6)));
+    public static final Item CIGAR = regItem(
+            "cigar",
+            new ConsumableCigarItem(
+                    new Item.Settings().maxDamage(6),
+                    "A slow burn, meant to be savoured.",
+                    "Chachi Grayland"
+            )
+    );
+
+    public static final Item CIGARETTE = regItem(
+            "cigarette",
+            new ConsumableCigarItem(
+                    new Item.Settings().maxDamage(3),
+                    "Cheap but effective nicotine.",
+                    "This stuff tastes bad."
+            )
+    );
+
 
     public static final Item HIGHBALL = regItem("highball",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
