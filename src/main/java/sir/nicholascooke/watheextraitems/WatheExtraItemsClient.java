@@ -27,9 +27,11 @@ public class WatheExtraItemsClient implements ClientModInitializer {
             MatrixStack matrices = ctx.matrixStack();
             if (matrices == null) return true;
 
-            BlockPos pos = outline.blockPos();
-            VertexConsumer vc = Objects.requireNonNull(ctx.consumers())
+            VertexConsumer vc = Objects
+                    .requireNonNull(ctx.consumers())
                     .getBuffer(RenderLayer.getLines());
+
+            BlockPos pos = outline.blockPos();
 
             matrices.push();
             matrices.translate(
@@ -38,53 +40,78 @@ public class WatheExtraItemsClient implements ClientModInitializer {
                     pos.getZ() - outline.cameraZ()
             );
 
-            // rotate to match block facing
             Direction facing = state.get(RadioBlock.FACING);
             float yRot = switch (facing) {
-                case WEST -> 90f;
                 case NORTH -> 0f;
-                case EAST -> 270f;
-                default -> 180f;
+                case EAST  -> 270f;
+                case SOUTH -> 180f;
+                case WEST  -> 90f;
+                default    -> 0f;
             };
 
-            matrices.translate(0.5, 0.0, 0.5);
+            matrices.translate(0.5, 0, 0.5);
             matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRot));
-            matrices.translate(-0.5, 0.0, -0.5);
+            matrices.translate(-0.5, 0, -0.5);
 
-            // ======================
-            // RADIO BASE (from model)
-            // from [0.5, 0.5, 2.5] to [15.5, 8, 13.5]
-            // ======================
-            WorldRenderer.drawBox(
-                    matrices, vc,
-                    0.5 / 16.0, 0.0 / 16.0, 2.5 / 16.0,
-                    15.5 / 16.0, 8.0 / 16.0, 13.5 / 16.0,
-                    0f, 0f, 0f, 0.4f
+            // ==== RADIO BASE ====
+            drawBox(matrices, vc,
+                    0.5, 0.5, 2.5,
+                    15.5, 8.0, 12.5
             );
 
-            // ======================
-            // ANTENNA STACK (exact model steps)
-            // ======================
+            // ==== TOP PLATE ====
+            drawBox(matrices, vc,
+                    1.0, 8.0, 3.0,
+                    15.0, 8.5, 12.0
+            );
 
-            draw(matrices, vc, 11, 8, 7.5, 13, 9, 8.5);
-            draw(matrices, vc, 10, 9, 7.5, 12, 10, 8.5);
-            draw(matrices, vc, 9.5, 10, 7.5, 11, 11, 8.5);
-            draw(matrices, vc, 8, 11, 7.5, 10, 12, 8.5);
-            draw(matrices, vc, 7, 12, 7.5, 9, 13, 8.5);
+            // ==== KNOBS ====
+            drawBox(matrices, vc,
+                    7.5, 1.5, 2.0,
+                    9.0, 3.0, 3.0
+            );
+
+            drawBox(matrices, vc,
+                    2.0, 1.5, 2.0,
+                    3.5, 3.0, 3.0
+            );
+
+            // ==== ANTENNA STACK ====
+            drawBox(matrices, vc,
+                    11.0, 8.0, 7.5,
+                    13.0, 9.0, 8.5
+            );
+            drawBox(matrices, vc,
+                    10.0, 9.0, 7.5,
+                    12.0, 10.0, 8.5
+            );
+            drawBox(matrices, vc,
+                    9.5, 10.0, 7.5,
+                    11.0, 11.0, 8.5
+            );
+            drawBox(matrices, vc,
+                    8.0, 11.0, 7.5,
+                    10.0, 12.0, 8.5
+            );
+            drawBox(matrices, vc,
+                    7.0, 12.0, 7.5,
+                    9.0, 13.0, 8.5
+            );
 
             matrices.pop();
             return false;
         });
     }
 
-    private static void draw(
+    private static void drawBox(
             MatrixStack matrices,
             VertexConsumer vc,
             double x1, double y1, double z1,
             double x2, double y2, double z2
     ) {
         WorldRenderer.drawBox(
-                matrices, vc,
+                matrices,
+                vc,
                 x1 / 16.0, y1 / 16.0, z1 / 16.0,
                 x2 / 16.0, y2 / 16.0, z2 / 16.0,
                 0f, 0f, 0f, 0.4f
