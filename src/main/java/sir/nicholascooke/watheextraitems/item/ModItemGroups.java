@@ -41,7 +41,9 @@ public class ModItemGroups {
             ModItems.HIGHBALL,
             ModItems.CIGAR,
             ModItems.CIGARETTE,
-            ModItems.COAL_COKE
+            ModItems.COAL_COKE,
+            ModItems.FLOW_DUST,
+            ModItems.CHARGE_DUST
     );
 
 

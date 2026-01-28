@@ -46,6 +46,25 @@ public class ModItems {
             "Slime? Why are you eating this?"
     ));
 
+    public static final Item FLOW_DUST = regItem("flow_dust", new ToolTip(
+            new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false), 1.0f)
+                    .alwaysEdible()
+                    .build()),
+            "Suspicious Dust.",
+            "Hmm Seems Addictive."
+    ));
+
+
+    public static final  Item CHARGE_DUST = regItem("charge_dust", new ToolTip(
+            new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
+                            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 400, 1, false, false), 1.0f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3, false, false), 1.0f)
+                            .alwaysEdible()
+                    .build()),
+            "Strange Stuff.",
+            "Tastes Spicy."
+    ));
     public static final Item POCKET_WATCH = regItem(
             "pocket_watch",
             new PocketWatchItem(new Item.Settings().maxCount(1))

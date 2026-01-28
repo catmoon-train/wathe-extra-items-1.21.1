@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "watheextraitems:item/charge_dust",
+		"particle": "watheextraitems:item/charge_dust"
+	}
+}
