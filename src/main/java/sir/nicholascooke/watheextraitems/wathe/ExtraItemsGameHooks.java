@@ -22,19 +22,19 @@ public final class ExtraItemsGameHooks {
     }
 
     private static void onWorldTick(ServerWorld world) {
-        GameWorldComponent game = GameWorldComponent.KEY.get(world);
-
-        if (game.getGameStatus() != GameWorldComponent.GameStatus.ACTIVE) {
-            GIVEN_THIS_ROUND.remove(world.getRegistryKey());
-            return;
-        }
-
-        if (GIVEN_THIS_ROUND.contains(world.getRegistryKey())) return;
-
-        GIVEN_THIS_ROUND.add(world.getRegistryKey());
-
-        for (ServerPlayerEntity player : world.getPlayers()) {
-            player.giveItemStack(new ItemStack(ModItems.POCKET_WATCH));
-        }
+//        GameWorldComponent game = GameWorldComponent.KEY.get(world);
+//
+//        if (game.getGameStatus() != GameWorldComponent.GameStatus.ACTIVE) {
+//            GIVEN_THIS_ROUND.remove(world.getRegistryKey());
+//            return;
+//        }
+//
+//        if (GIVEN_THIS_ROUND.contains(world.getRegistryKey())) return;
+//
+//        GIVEN_THIS_ROUND.add(world.getRegistryKey());
+//
+//        for (ServerPlayerEntity player : world.getPlayers()) {
+//            player.giveItemStack(new ItemStack(ModItems.POCKET_WATCH));
+//        }
     }
 }
