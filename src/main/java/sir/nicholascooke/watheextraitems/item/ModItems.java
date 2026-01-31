@@ -1,4 +1,5 @@
 package sir.nicholascooke.watheextraitems.item;
+import dev.doctor4t.trainmurdermystery.item.CocktailItem;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -10,7 +11,7 @@ import net.minecraft.util.Identifier;
 import sir.nicholascooke.watheextraitems.WatheExtraItems;
 import net.minecraft.item.BlockItem;
 import sir.nicholascooke.watheextraitems.block.ModBlocks;
-import dev.doctor4t.wathe.item.CocktailItem;
+
 
 
 public class ModItems {

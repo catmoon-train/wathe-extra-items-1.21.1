@@ -1,6 +1,7 @@
 package sir.nicholascooke.watheextraitems.wathe;
 
-import dev.doctor4t.wathe.cca.GameWorldComponent;
+
+import dev.doctor4t.trainmurdermystery.cca.GameWorldComponent;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
