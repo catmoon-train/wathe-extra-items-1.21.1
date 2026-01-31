@@ -19,8 +19,8 @@ public class ModItems {
             "cigar",
             new ConsumableCigarItem(
                     new Item.Settings().maxDamage(6),
-                    "A slow burn, meant to be savoured.",
-                    "Chachi Grayland"
+                    "tooltip.watheextraitems.cigar.short",
+                    "tooltip.watheextraitems.cigar.detailed"
             )
     );
 
@@ -28,8 +28,8 @@ public class ModItems {
             "cigarette",
             new ConsumableCigarItem(
                     new Item.Settings().maxDamage(3),
-                    "Cheap but effective nicotine.",
-                    "This stuff tastes bad."
+                    "tooltip.watheextraitems.cigarette.short",
+                    "tooltip.watheextraitems.cigarette.detailed"
             )
     );
 
@@ -43,8 +43,8 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 10, false, false),1.0f)
                     .alwaysEdible()
                     .build()),
-            "It's Literally Just Coal Coke.",
-            "Slime? Why are you eating this?"
+            "tooltip.watheextraitems.coal_coke.short",
+            "tooltip.watheextraitems.coal_coke.detailed"
     ));
 
     public static final Item FLOW_DUST = regItem("flow_dust", new ToolTip(
@@ -52,8 +52,8 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false), 1.0f)
                     .alwaysEdible()
                     .build()),
-            "Suspicious Dust.",
-            "Hmm Seems Addictive."
+            "tooltip.watheextraitems.flow_dust.short",
+            "tooltip.watheextraitems.flow_dust.detailed"
     ));
 
 
@@ -63,8 +63,8 @@ public class ModItems {
                             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3, false, false), 1.0f)
                             .alwaysEdible()
                     .build()),
-            "Strange Stuff.",
-            "Tastes Spicy."
+            "tooltip.watheextraitems.charge_dust.short",
+            "tooltip.watheextraitems.charge_dust.detailed"
     ));
     public static final Item POCKET_WATCH = regItem(
             "pocket_watch",
@@ -80,33 +80,33 @@ public class ModItems {
 
     public static final Item TMOTL = regItem("tmotl", new ToolTip(
             new Item.Settings().maxCount(1),
-            "How is this here?",
-            "Written By Agatha Christie in APRIL 1923"
+            "tooltip.watheextraitems.tmotl.short",
+            "tooltip.watheextraitems.tmotl.detailed"
     ));
     public static final Item TRHM = regItem("trhm", new ToolTip(
             new Item.Settings().maxCount(1),
-            "Is This An Omen?",
-            "Written By Alan Alexander Milne"
+            "tooltip.watheextraitems.trhm.short",
+            "tooltip.watheextraitems.trhm.detailed"
     ));
     public static final Item ASIS = regItem("asis", new ToolTip(
             new Item.Settings().maxCount(1),
-            "A Detective En Route",
-            "Written by Sir Arthur Conan Doyle"
+            "tooltip.watheextraitems.asis.short",
+            "tooltip.watheextraitems.asis.detailed"
     ));
     public static final Item TMRM = regItem("tmrm", new ToolTip(
             new Item.Settings().maxCount(1),
-            "Brutal but Brief",
-            "Written By Edgar Allan Poe"
+            "tooltip.watheextraitems.tmrm.short",
+            "tooltip.watheextraitems.tmrm.detailed"
     ));
     public static final Item TM = regItem("tm", new ToolTip(
             new Item.Settings().maxCount(1),
-            "A Tale of Redemption",
-            "Written By Wilkie Collins"
+            "tooltip.watheextraitems.tm.short",
+            "tooltip.watheextraitems.tm.detailed"
     ));
     public static final Item TMOTYR = regItem("tmotyr", new ToolTip(
             new Item.Settings().maxCount(1),
-            "A Perfect Crime in Plain Sight.",
-            "Written By Gaston Leroux"
+            "tooltip.watheextraitems.tmotyr.short",
+            "tooltip.watheextraitems.tmotyr.detailed"
     ));
 
     private static Item regItem(String name, Item item) {

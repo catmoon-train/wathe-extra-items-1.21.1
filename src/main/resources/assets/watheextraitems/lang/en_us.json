@@ -10,8 +10,6 @@
 
   "item.watheextraitems.cigar": "Cigar",
   "item.watheextraitems.cigarette": "Cigarette",
-  "item.watheextraitems.cigarette.lore": "Cheap but effective nicotine.",
-  "item.watheextraitems.cigarette.lore.2": "This stuff tastes bad.",
   "item.watheextraitems.highball": "Highball",
   "item.watheextraitems.coal_coke": "Coal Coke",
   "item.watheextraitems.flow_dust": "Flow Dust",
@@ -24,5 +22,40 @@
 
   "itemGroup.watheextramisc": "Wathe Extra Items: Misc",
   "itemGroup.watheextrabooks": "Wathe Extra Items: Books",
-  "itemGroup.watheextraconsumables": "Wathe Extra Items: Consumables"
+  "itemGroup.watheextraconsumables": "Wathe Extra Items: Consumables",
+
+  "tooltip.watheextraitems.hold_shift_for_more": "Hold §eShift§r for more info.",
+
+  "tooltip.watheextraitems.cigar.short": "A slow burn, meant to be savoured.",
+  "tooltip.watheextraitems.cigar.detailed": "Chachi Grayland",
+
+  "tooltip.watheextraitems.cigarette.short": "Cheap but effective nicotine.",
+  "tooltip.watheextraitems.cigarette.detailed": "This stuff tastes bad.",
+
+  "tooltip.watheextraitems.coal_coke.short": "It's Literally Just Coal Coke.",
+  "tooltip.watheextraitems.coal_coke.detailed": "Slime? Why are you eating this?",
+
+  "tooltip.watheextraitems.flow_dust.short": "Suspicious Dust.",
+  "tooltip.watheextraitems.flow_dust.detailed": "Hmm Seems Addictive.",
+
+  "tooltip.watheextraitems.charge_dust.short": "Strange Stuff.",
+  "tooltip.watheextraitems.charge_dust.detailed": "Tastes Spicy.",
+
+  "tooltip.watheextraitems.tmotl.short": "How is this here?",
+  "tooltip.watheextraitems.tmotl.detailed": "Written By Agatha Christie in APRIL 1923",
+
+  "tooltip.watheextraitems.trhm.short": "Is This An Omen?",
+  "tooltip.watheextraitems.trhm.detailed": "Written By Alan Alexander Milne",
+
+  "tooltip.watheextraitems.asis.short": "A Detective En Route",
+  "tooltip.watheextraitems.asis.detailed": "Written by Sir Arthur Conan Doyle",
+
+  "tooltip.watheextraitems.tmrm.short": "Brutal but Brief",
+  "tooltip.watheextraitems.tmrm.detailed": "Written By Edgar Allan Poe",
+
+  "tooltip.watheextraitems.tm.short": "A Tale of Redemption",
+  "tooltip.watheextraitems.tm.detailed": "Written By Wilkie Collins",
+
+  "tooltip.watheextraitems.tmotyr.short": "A Perfect Crime in Plain Sight.",
+  "tooltip.watheextraitems.tmotyr.detailed": "Written By Gaston Leroux"
 }

@@ -1,0 +1,61 @@
+{
+  "item.watheextraitems.tmotl": "海濱謀殺案",
+  "item.watheextraitems.trhm": "紅屋之謎",
+  "item.watheextraitems.asis": "血字的研究",
+  "item.watheextraitems.tmrm": "莫格街兇殺案",
+  "item.watheextraitems.tm": "月亮寶石",
+  "item.watheextraitems.tmotyr": "黃室之謎",
+
+
+
+  "item.watheextraitems.cigar": "雪茄",
+  "item.watheextraitems.cigarette": "香菸",
+  "item.watheextraitems.highball": "檸檬雞尾酒",
+  "item.watheextraitems.coal_coke": "焦炭",
+  "item.watheextraitems.flow_dust": "流塵",
+  "item.watheextraitems.charge_dust": "電荷塵",
+
+  "block.watheextraitems.radio": "收音機",
+
+  "item.watheextraitems.pocket_watch": "懷錶",
+  "item.watheextraitems.pocket_watch.local_time": "§6當地時間：§f%1$s",
+
+  "itemGroup.watheextramisc": "Wathe 額外物品：雜項",
+  "itemGroup.watheextrabooks": "Wathe 額外物品：書籍",
+  "itemGroup.watheextraconsumables": "Wathe 額外物品：消耗品",
+
+  "tooltip.watheextraitems.hold_shift_for_more": "按住 §eShift§r 查看更多資訊。",
+
+  "tooltip.watheextraitems.cigar.short": "緩慢燃燒，值得細細品味。",
+  "tooltip.watheextraitems.cigar.detailed": "Chachi Grayland",
+
+  "tooltip.watheextraitems.cigarette.short": "便宜但有效的尼古丁。",
+  "tooltip.watheextraitems.cigarette.detailed": "這東西味道很差。",
+
+  "tooltip.watheextraitems.coal_coke.short": "字面意義上的焦炭。",
+  "tooltip.watheextraitems.coal_coke.detailed": "史萊姆？你為什麼要吃這個？",
+
+  "tooltip.watheextraitems.flow_dust.short": "可疑的粉塵。",
+  "tooltip.watheextraitems.flow_dust.detailed": "嗯，似乎會上癮。",
+
+  "tooltip.watheextraitems.charge_dust.short": "奇怪的東西。",
+  "tooltip.watheextraitems.charge_dust.detailed": "嚐起來很辣。",
+
+  "tooltip.watheextraitems.tmotl.short": "這東西怎麼在這裡？",
+  "tooltip.watheextraitems.tmotl.detailed": "阿嘉莎·克莉斯蒂於1923年4月著",
+
+  "tooltip.watheextraitems.trhm.short": "這是一個預兆嗎？",
+  "tooltip.watheextraitems.trhm.detailed": "艾倫·亞歷山大·米爾恩 著",
+
+  "tooltip.watheextraitems.asis.short": "一位正在路上的偵探",
+  "tooltip.watheextraitems.asis.detailed": "亞瑟·柯南·道爾爵士 著",
+
+  "tooltip.watheextraitems.tmrm.short": "殘酷但簡短",
+  "tooltip.watheextraitems.tmrm.detailed": "愛德加·愛倫·坡 著",
+
+  "tooltip.watheextraitems.tm.short": "一個救贖的故事",
+  "tooltip.watheextraitems.tm.detailed": "威爾基·柯林斯 著",
+
+  "tooltip.watheextraitems.tmotyr.short": "眾目睽睽下的完美犯罪。",
+  "tooltip.watheextraitems.tmotyr.detailed": "加斯東·勒魯 著"
+}
