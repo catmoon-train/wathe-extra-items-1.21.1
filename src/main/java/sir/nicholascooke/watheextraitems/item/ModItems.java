@@ -37,32 +37,35 @@ public class ModItems {
     public static final Item HIGHBALL = regItem("highball",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
-    public static final Item COAL_COKE = regItem("coal_coke", new ToolTip(
+    public static final Item COAL_COKE = regItem("coal_coke", new FoodWithCooldownItem(
             new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 400, 10, false, false), 1.0f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 10, false, false),1.0f)
                     .alwaysEdible()
                     .build()),
+            30,
             "tooltip.watheextraitems.coal_coke.short",
             "tooltip.watheextraitems.coal_coke.detailed"
     ));
 
-    public static final Item FLOW_DUST = regItem("flow_dust", new ToolTip(
+    public static final Item FLOW_DUST = regItem("flow_dust", new FoodWithCooldownItem(
             new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false), 1.0f)
                     .alwaysEdible()
                     .build()),
+            30,
             "tooltip.watheextraitems.flow_dust.short",
             "tooltip.watheextraitems.flow_dust.detailed"
     ));
 
 
-    public static final  Item CHARGE_DUST = regItem("charge_dust", new ToolTip(
+    public static final  Item CHARGE_DUST = regItem("charge_dust", new FoodWithCooldownItem(
             new Item.Settings().maxCount(1).food(new FoodComponent.Builder()
                             .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 400, 1, false, false), 1.0f)
                             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3, false, false), 1.0f)
                             .alwaysEdible()
                     .build()),
+            30,
             "tooltip.watheextraitems.charge_dust.short",
             "tooltip.watheextraitems.charge_dust.detailed"
     ));
