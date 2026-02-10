@@ -20,7 +20,6 @@ public class FoodWithCooldownItem extends ToolTip {
         this.cooldownTicks = cooldownSeconds * 20;
     }
 
-    @Override
     public ItemStack finishUsing(ItemStack stack, World world, PlayerEntity user) {
         ItemStack result = super.finishUsing(stack, world, user);
         user.getItemCooldownManager().set(this, cooldownTicks);
