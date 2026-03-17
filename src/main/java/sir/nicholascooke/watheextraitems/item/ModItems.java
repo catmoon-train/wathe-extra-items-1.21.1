@@ -10,7 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import sir.nicholascooke.watheextraitems.WatheExtraItems;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.HoneyBottleItem;
 import sir.nicholascooke.watheextraitems.block.ModBlocks;
 
 public class ModItems {
@@ -21,7 +20,7 @@ public class ModItems {
                     "tooltip.watheextraitems.cigar.short",
                     "tooltip.watheextraitems.cigar.detailed"));
     public static final Item HIGHBALL = regItem("highball",
-            new HoneyBottleItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
+            new DrinkableItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item CIGARETTE = regItem(
             "cigarette",
             new ConsumableCigarItem(
