@@ -9,7 +9,7 @@ loom {
 }
 
 group = "sir.nicholascooke.watheextraitems"
-version = "1.0.6"
+version = "${mod_version}"
 
 repositories {
 	maven {
