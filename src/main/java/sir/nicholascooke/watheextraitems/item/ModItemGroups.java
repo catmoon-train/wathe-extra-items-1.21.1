@@ -37,8 +37,7 @@ public class ModItemGroups {
     public static final ItemGroup EXTRA_CONSUMABLES = regItemGroup(
             "extraitems_consumables",
             Text.translatable("itemGroup.watheextraconsumables"),
-            ModItems.HIGHBALL,
-            ModItems.HIGHBALL,
+            ModItems.CHARGE_DUST,
             ModItems.CIGAR,
             ModItems.CIGARETTE,
             ModItems.COAL_COKE,

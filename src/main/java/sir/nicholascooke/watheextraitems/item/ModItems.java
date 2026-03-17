@@ -1,5 +1,4 @@
 package sir.nicholascooke.watheextraitems.item;
-import dev.doctor4t.trainmurdermystery.item.CocktailItem;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -32,10 +31,6 @@ public class ModItems {
                     "tooltip.watheextraitems.cigarette.detailed"
             )
     );
-
-
-    public static final Item HIGHBALL = regItem("highball",
-            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
     public static final Item COAL_COKE = regItem("coal_coke", new FoodWithCooldownItem(
             new Item.Settings().maxCount(1).food(new FoodComponent.Builder()

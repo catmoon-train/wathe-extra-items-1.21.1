@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import sir.nicholascooke.watheextraitems.block.ModBlocks;
 import sir.nicholascooke.watheextraitems.item.ModItemGroups;
 import sir.nicholascooke.watheextraitems.item.ModItems;
-import sir.nicholascooke.watheextraitems.wathe.ExtraItemsGameHooks;
 
 public class WatheExtraItems implements ModInitializer {
 	public static final String MOD_ID = "watheextraitems";
@@ -16,6 +15,5 @@ public class WatheExtraItems implements ModInitializer {
 		ModBlocks.regModBlocks();
 		ModItems.regModItems();
 		ModItemGroups.regItemGroups();
-		ExtraItemsGameHooks.init();
 	}
 }
